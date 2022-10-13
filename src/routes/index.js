@@ -1,9 +1,9 @@
-const notificationRouter = require('./notification');
 const newsRouter = require('./news');
 const siteRouter = require('./site');
+const coursesRouter = require('./courses');
 
 function route(app) {
-    app.use('/notification', notificationRouter);
+    app.use('/courses', coursesRouter);
     app.use('/news', newsRouter);
     app.use('/', siteRouter);
 }
